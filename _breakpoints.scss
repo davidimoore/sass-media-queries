@@ -1,0 +1,78 @@
+//breakpoints
+
+
+@mixin breakpoint($point){
+  @if $point == iphone4-landscape{
+    @include iphone4-landscape {
+      @content;
+    }
+  }
+
+  @else if $point == iphone4-portrait{
+    @include iphone4-portrait(){  @content; }
+  }
+
+  @else if $point == iphone5-landscape{
+    @include iphone5-landscape {  @content;  }
+  }
+
+  @else if $point == iphone5-portrait{
+    @include iphone5-portrait {  @content;  }
+  }
+
+  @else if $point == iphone6-landscape{
+    @include iphone6-landscape {  @content;  }
+  }
+
+  @else if $point == iphone6-portrait{
+    @include iphone6-portrait {  @content;  }
+  }
+
+  @else if $point == iphone6-plus-landscape{
+    @include iphone6-plus-landscape {  @content;  }
+  }
+
+  @else if $point == iphone6-plus-portrait{
+    @include iphone6-plus-portrait {  @content;  }
+  }
+
+  @else if $point == mobile-tablet-gap{
+    @include mobile-tablet-gap {@content;}
+  }
+
+  @else if $point == samsung-landscape{
+    @include samsung-galaxy-landscape {  @content;  }
+  }
+
+  @else if $point == samsung-portrait{
+    @include samsung-galaxy-portrait {  @content;  }
+  }
+
+    @else if $point == samsung-galaxy-ten-landscape{
+    @include samsung-galaxy-ten-landscape{
+      @content;
+    }
+  }
+
+  @else if $point == tablet-landscape {
+    @include tablet-landscape {  @content;  }
+  }
+
+@else if $point == tablet-portrait {
+    @include tablet-portrait {  @content;  }
+  }
+
+
+  @else if $point == sm-desktop{
+    @include sm-desktop{
+      @content;
+    }
+  }
+
+  @else if $point == lg-desktop {
+    @include lg-desktop {
+      @content;
+    }
+  }
+
+}

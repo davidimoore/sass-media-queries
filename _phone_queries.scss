@@ -1,0 +1,114 @@
+@mixin mobile-phone{
+  @media only screen
+  and (min-width:320px)
+  and (max-width:480px){
+    @content;
+  }
+}
+
+
+@mixin iphone4-landscape{
+  @media only screen
+  and (min-width : 320px)
+  and (max-width : 480px)
+  and (orientation : landscape) {
+    @content;
+  }
+}
+
+
+@mixin iphone4-portrait {
+  @media only screen
+  and (max-width : 320px)
+  and (orientation : portrait) {
+    @content;
+  }
+}
+
+
+
+/* iPhone 5 ----------- */
+@mixin iphone5-landscape {
+  @media only screen
+  and (min-width: 320px)
+  and (max-device-height: 568px)
+  and (orientation: landscape)
+  and (-webkit-device-pixel-ratio: 2) {
+    @content
+  }
+}
+
+@mixin iphone5-portrait {
+
+  @media only screen
+  and (min-width: 320px)
+  and (max-device-height: 568px)
+  and (orientation: portrait)
+  and (-webkit-device-pixel-ratio: 2) {
+    @content;
+  }
+
+}
+
+@mixin iphone6-landscape {
+  @media only screen
+  and (min-width : 375px)
+  and (max-width : 667px)
+  and (orientation : landscape){
+    @content;
+  }
+}
+
+@mixin iphone6-portrait {
+  @media only screen
+  and (min-width : 375px)
+  and (max-width : 667px)
+  and (orientation : portrait){
+   @content;
+  }
+}
+
+
+
+
+
+@mixin iphone6-plus-landscape{
+  @media only screen
+  and (min-width : 540px)
+  and (max-width : 960px)
+  and (orientation : landscape){
+    @content;
+  }
+}
+
+@mixin iphone6-plus-portrait{
+  @media only screen
+  and (min-width : 540px)
+  and (max-width : 960px)
+  and (orientation : portrait){
+    @content;
+  }
+}
+
+
+@mixin samsung-galaxy-landscape{
+  /* Samsung Galaxy S3 ----------- */
+  @media only screen
+  and (min-width: 320px)
+  and (max-device-height: 640px)
+  and (orientation : landscape)
+  and (-webkit-device-pixel-ratio: 2){
+    @content
+  }
+}
+
+@mixin samsung-galaxy-portrait{
+  /* Samsung Galaxy S3 ----------- */
+  @media only screen
+  and (min-width: 320px)
+  and (max-device-height: 640px)
+  and (orientation : portrait)
+  and (-webkit-device-pixel-ratio: 2){
+    @content
+  }
+}
